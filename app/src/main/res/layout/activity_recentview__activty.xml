@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Management.recentView_Activty">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/recent_viewed_toolbar"
+        style="@style/toolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:id="@+id/recent_viewed_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_back_button"
+            />
+        <TextView
+            android:layout_marginStart="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recently Viewed"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/recent_viewed_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/recent_view_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:background="@color/AppBackground"
+        >
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/recent_viewed_progressBar"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_centerInParent="true"
+        style="@style/SpinKitView.Small.Wave"
+        app:SpinKit_Color="@color/colorPrimary"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>

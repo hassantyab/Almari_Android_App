@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#00875c</color>
+<color name="colorPrimaryDark">#000000</color>
+<color name="colorAccent">#00875c</color>
+<color name="DividerColor" > #80CBC4</color>
+<color name="item_color" > #AAAAAA</color>
+<color name="list_group_title">#808080</color>
+<color name="list_item_title">#AAAAAA</color>
+<color name="group_divider_color">#80CBC4</color>
+<color name="white">#FFFFFF</color>
+<color name="lime">#E6EE9C</color>
+<color name="orange">#FFCC80</color>
+<color name="grey">#B0BEC5</color>
+<color name="purple">#B39DDB</color>
+<color name="pink">#F48FB1</color>
+<color name="toolbarColor">#52b76d</color>
+    <color name="black">#000000</color>
+    <color name="TextPrimary">#000000</color>
+<color name="TextSecondary">#000000</color>
+<color name="AppBackground"> #e5e5e5 </color>
+<color name="default_indicator_color_selected">#eeee</color>
+<color name="default_indicator_color_unselected">#66eeeeee</color>
+<color name="normal">#ffffff</color>
+<color name="selected">#ffffff </color>
+<color name="subtextColor">#c4c4c4</color>
+<color name="BrandColor">#c4c4c4</color>
+<color name="ToastLayoutcolor">#808080</color>
+<color name="ToastTextColor">#ffffff</color>
+<color name="linkColor">#003182</color>
+<color name="ratingColor"> #FFDF00</color>
+</resources>

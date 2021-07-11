@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/SearchField"
+        android:icon="@drawable/search_logo"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        >
+
+
+    </item>
+    <item
+        android:id="@+id/Search_Microphone"
+        android:title="Microphone"
+        android:icon="@drawable/search_microphone_logo"
+        app:showAsAction="always"
+        >
+    </item>
+
+
+
+
+    <item
+        android:title=""
+        android:icon="@drawable/menu_main"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/Search_to_home"
+                android:title="Home"
+                android:icon="@drawable/home_logo"
+                app:showAsAction="never"
+                />
+
+            <item
+                android:id="@+id/SettingS2"
+                android:title="Recent Searches"
+                android:icon="@drawable/recent_searches"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/SettingS3"
+                android:title="Recently Viewed"
+                android:icon="@drawable/recently_view"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/Seacrch_myOrder"
+                android:title="My Orders"
+                android:icon="@drawable/my_orders"
+                app:showAsAction="never"
+                />
+
+        </menu>
+    </item>
+
+
+</menu>

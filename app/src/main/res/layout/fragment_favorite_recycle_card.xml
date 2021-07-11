@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/fav_imageView"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:padding="4dp" />
+            <ProgressBar
+                android:layout_alignParentStart="true"
+                android:id="@+id/fav_progressBar"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:visibility="visible"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/favBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="20sp"
+                android:maxLength="30"
+                android:ellipsize="end"
+                android:layout_toEndOf="@id/fav_imageView"
+                android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/TextPrimary" />
+            <Button
+                android:id="@+id/fav_Delete_Button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/cancel_btn_logo"
+                android:layout_alignParentRight="true"
+                />
+
+            <TextView
+                android:id="@+id/fav_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/favBrand"
+                style="@style/basicSpaces"
+                android:lines="1"
+                android:layout_toRightOf="@id/fav_imageView"
+                android:text="13.3 Inch, 256 GB"
+                 />
+
+
+
+            <TextView
+                android:id="@+id/fav_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fav_title"
+                style="@style/basicSpaces"
+                android:lines="1"
+                android:layout_toRightOf="@id/fav_imageView"
+                android:text="56990"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/fav_buybtn"
+                android:layout_below="@+id/fav_title"
+                android:layout_alignParentRight="true"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Buy Now"
+                android:textColor="@color/white"
+                style="@style/buttonColor"
+                android:layout_margin="10sp"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

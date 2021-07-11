@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fyp.hassan.almari">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/alamari_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/alamari_app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+        <activity
+            android:name=".home_tabs.HomeActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginClasses.Sign_In_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+
+            />
+        <activity
+            android:name=".User_Management.MyAccount"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".Search_Activities.Search_Activity"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".User_Management.SignUp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+
+            />
+        <activity
+            android:name=".User_Management.ForgetPassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+
+            />
+        <activity
+            android:name=".Category_package.CategoryActivity"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".SingleProductAvtivity.SingleProductActivity"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".Order_Activities.Checkout_tab"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".User_Management.myAccountDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+
+            />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".SingleProductAvtivity.Product_user_reviews"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".Customer_Order.MyOrdersListClass"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".Customer_Order.OrderDetailsClass"
+            android:screenOrientation="portrait"
+
+            />
+        <activity android:name=".splashScreen"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User_Management.recentView_Activty"
+
+            />
+        <activity android:name=".User_Management.feedback_package.myFeedBack_activity"
+
+            />
+    </application>
+
+</manifest>

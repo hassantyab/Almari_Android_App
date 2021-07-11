@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
+
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="CardView.SS">
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+    <style name="toolbarStyle">
+        <item name="android:background">@drawable/app_color </item>
+
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+    </style>
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RatingBar"
+        parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="android:progressTint">@color/ratingColor</item>
+        <item name="android:numStars">5</item>
+        <item name="android:max">5</item>
+    </style>
+    <style name="basicSpaces">
+        <item name="android:layout_marginStart">10sp</item>
+        <item name="android:layout_marginEnd">10sp</item>
+
+    </style>
+    <style name="TopSpaces">
+        <item name="android:layout_marginStart">10sp</item>
+        <item name="android:layout_marginEnd">10sp</item>
+        <item name="android:layout_marginTop">10sp</item>
+
+    </style>
+    <style name="buttonColor">
+        <item name="android:background"> @drawable/app_color</item>
+    </style>
+</resources>

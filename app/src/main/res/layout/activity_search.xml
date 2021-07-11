@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fyp.hassan.almari.Search_Activities.Search_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        style="@style/toolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:id="@+id/search_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_back_button"
+            />
+        <TextView
+            android:layout_marginStart="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+    android:layout_alignParentTop="true"
+    android:id="@+id/Search_result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <ImageView
+        android:layout_margin="10sp"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/category_logo"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="CATEGORIES"
+        android:textSize="@dimen/HeadingSize"
+        android:textColor="@color/TextPrimary"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:id="@+id/Search_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catLogo"
+        android:layout_marginStart="10sp"
+        android:textColor="@color/TextPrimary"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/Search_categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/Search_Text"
+        android:layout_marginStart="10sp"
+        android:maxLength="20"
+        android:text="Category name"
+        android:layout_weight="1"
+        />
+
+        <TextView
+            android:id="@+id/Search_TotalResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:textColor="@color/TextPrimary"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <ImageView
+        android:id="@+id/topProductlogo"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/top_products"
+        android:layout_margin="10sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="TOP PRODUCTS"
+        android:textStyle="bold"
+        android:textColor="@color/TextPrimary"
+        />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Search_recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:nestedScrollingEnabled="false"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    
+    <Button
+        android:id="@+id/Search_AllResult_btn"
+        android:layout_margin="30sp"
+        android:text="See All Result (1000)"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/buttonColor"
+
+        />
+    <EditText
+        android:id="@+id/Search_Et_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:hint="Search Products"
+        android:inputType="text"
+        android:visibility="gone"
+        >
+
+    </EditText>
+
+    </LinearLayout>
+        <ProgressBar
+            android:id="@+id/search_activity_pd"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10sp"
+            android:visibility="gone"
+            />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

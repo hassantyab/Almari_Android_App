@@ -1,0 +1,103 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/SearchOption"
+        android:title="search"
+        android:icon="@drawable/search_logo"
+        app:showAsAction="always"
+        >
+    </item>
+    <item
+        android:id="@+id/Myaccount"
+        android:title="User"
+        android:icon="@drawable/user_logo"
+        app:showAsAction="always"
+
+        >
+    </item>
+    <item
+        android:id="@+id/cart_menu"
+        android:visible="false"
+        android:icon="@drawable/cart_logo"
+        android:actionLayout="@layout/cart_counter"
+        app:showAsAction="always"
+        >
+
+    </item>
+
+
+   <item
+       android:id="@+id/menu_option"
+       android:title=""
+       android:icon="@drawable/menu_main"
+       app:showAsAction="always"
+       >
+    <menu>
+
+        <item
+            android:id="@+id/menu_Home"
+            android:title="Home"
+            android:icon="@drawable/home_logo"
+            app:showAsAction="never"
+            android:visible="false"
+            />
+
+        <item
+            android:id="@+id/SignIn"
+            android:title="Sign In"
+            android:icon="@drawable/sign_in_logo"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/Logout"
+            android:title="Logout"
+            android:icon="@drawable/sign_in_logo"
+            app:showAsAction="never"
+            android:visible="false"
+            />
+
+        <item
+            android:id="@+id/Submenu_Myaccount"
+            android:title="User"
+            android:icon="@drawable/submenu_my_account_logo"
+            app:showAsAction="never"
+            android:visible="false"
+            >
+        </item>
+        <item
+            android:id="@+id/SaveMenu"
+            android:title="Save"
+            android:icon="@drawable/save_menu_icon"
+            android:visible="false"
+            app:showAsAction="never"
+            >
+        </item>
+        <item
+            android:id="@+id/RecentSearches"
+            android:title="Recent Searches"
+            android:icon="@drawable/recent_searches"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/RecentViews"
+            android:title="Recently Viewed"
+            android:icon="@drawable/recently_view"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/MyOrders"
+            android:title="My Orders"
+            android:icon="@drawable/my_orders"
+            app:showAsAction="never"
+            />
+
+    </menu>
+   </item>
+
+
+
+
+</menu>

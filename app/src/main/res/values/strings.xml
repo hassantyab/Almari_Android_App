@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Almari</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="facebook_app_id">204157810243301</string>
+    <string name="fb_login_protocol_scheme">fb204157810243301</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="film_genres">Film genres</string>
+    <string name="website">https://en.wikipedia.org/wiki/Film</string>
+    <string name="date">22 Oct 2015</string>
+    <string name="selected_item">Selected item</string>
+    <string name="ApiAddress"> http://smart-ecom.herokuapp.com/</string>
+    <string name="recAddress"> http://smart-recommender.herokuapp.com/</string>
+    <string name="Paypal_client_id">AbgiqcQOPKexniMD4jyCHNP8q72VcLmH2XLT1MeMKZuv8WEvtn7eWzsDMJQ71tu8F5p6yFKfaA6nOcRS</string>
+    <array name="page_indicators">
+        <item>Circle</item>
+        <item>Dash</item>
+        <item>Round Square</item>
+        <item>Square</item>
+        <item>Custom</item>
+    </array>
+
+    <array name="Spinner_vales">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </array>
+    <string name="ibm_username">90524e5d-30df-46ad-b64d-4259f4a59f38</string>
+    <string name="ibm_password">c2gqvNM6jYJ6</string>
+    <string name="ibm_url">https://stream.watsonplatform.net/speech-to-text/api</string>
+    <string name="ibm_watson">
+        {
+  "url": "https://stream.watsonplatform.net/speech-to-text/api",
+  "username": "90524e5d-30df-46ad-b64d-4259f4a59f38",
+  "password": "c2gqvNM6jYJ6"
+}
+    </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/Search_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="visible"
+        />
+    <ImageView
+        android:id="@+id/Search_product_image"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_margin="10sp"
+        android:src="@drawable/men"
+        />
+     <TextView
+         android:id="@+id/Search_brandName"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Brand"
+         android:textColor="@color/grey"
+         android:maxLines="1"
+         android:ellipsize="end"
+         android:layout_toEndOf="@id/Search_product_image"
+         style="@style/TopSpaces"
+         />
+    <TextView
+        android:id="@+id/Search_product_title"
+        android:text="Iphone 9"
+        android:textColor="@color/TextPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toEndOf="@id/Search_product_image"
+        android:layout_below="@+id/Search_brandName"
+        style="@style/basicSpaces"
+        />
+    <TextView
+        android:id="@+id/Search_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rs 1000"
+        android:textColor="@color/TextPrimary"
+        android:layout_toRightOf="@id/Search_product_image"
+        android:layout_below="@+id/Search_product_title"
+        android:maxLines="1"
+        android:ellipsize="end"
+        style="@style/basicSpaces"
+        />
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainToolbar"
+    android:background="@drawable/app_color"
+        >
+        <ImageView
+            android:id="@+id/toolbar_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_back_button"
+            />
+        <TextView
+            android:id="@+id/toolbarHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:layout_marginStart="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/Activity_title"
+            />
+
+</android.support.v7.widget.Toolbar>

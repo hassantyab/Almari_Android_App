@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SingleProductAvtivity.Product_user_reviews">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/review_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/toolbarStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+        <ImageView
+            android:id="@+id/review_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_back_button"
+            />
+        <TextView
+            android:textSize="@dimen/HeadingSize"
+            android:text="Write a Review"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            />
+    </android.support.v7.widget.Toolbar>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="vertical"
+       >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/review_layout"
+                    android:visibility="visible"
+                    >
+                <TextView
+                    android:id="@+id/reviewProductTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:textSize="20sp"
+                    android:textColor="@color/TextPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/reviewProductPrice"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TextPrimary"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/AppBackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have you used this product? Rate it now"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <RatingBar
+                    android:id="@+id/review_ratingBar"
+                    android:layout_margin="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:layout_gravity="end"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:rating="1"
+                    android:progressTint="@color/ratingColor"
+                    />
+
+                <CheckBox
+                    android:id="@+id/reviewFullCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write a full review"
+                    android:layout_margin="30sp"
+                    />
+                <LinearLayout
+                    android:id="@+id/fullreviewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <EditText
+                        android:id="@+id/reviewerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:hint="Pulish as*"
+                        />
+                    <EditText
+                        android:id="@+id/reviewTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:hint="Title*"
+                        />
+                    <EditText
+                        android:id="@+id/reviewText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:hint="Review*"
+                        />
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/review_sendBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SEND REVIEW"
+                    android:textColor="@color/white"
+                    android:layout_margin="10sp"
+                    style="@style/buttonColor"
+                    />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/review_products_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+                    android:nestedScrollingEnabled="false"
+                    >
+
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+   </ScrollView>
+</LinearLayout>

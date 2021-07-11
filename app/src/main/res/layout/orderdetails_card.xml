@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10sp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp">
+
+            <ImageView
+                android:id="@+id/orderCard_image"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10sp"
+
+                >
+            </ImageView>
+            <ProgressBar
+                android:id="@+id/orderCard_progressBar"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10sp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorPrimary"
+                />
+
+
+            <TextView
+                android:id="@+id/orderCard_brand"
+                style="@style/TopSpaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/orderCard_image"
+                android:maxLength="30"
+                android:text="Apple"
+                android:textColor="@color/BrandColor" />
+
+            <TextView
+                android:id="@+id/orderCard_title"
+                style="@style/basicSpaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderCard_brand"
+                android:layout_toEndOf="@+id/orderCard_image"
+                android:text="Iphone 6sasdasdjbajksfbabfbjhsvfjvjvfjsdvfjsdvjfvsdjfvjsdvfjsvdh"
+                android:maxLength="18"
+                android:ellipsize="end"
+                android:textColor="@color/TextPrimary" />
+            <TextView
+                android:id="@+id/orderCard_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/orderCard_image"
+                android:layout_below="@+id/orderCard_title"
+                android:text="Rs: 30000"
+                style="@style/basicSpaces"
+                android:textColor="@color/TextPrimary"
+                tools:ignore="UnknownId" />
+            <TextView
+                android:id="@+id/orderCard_Quantity"
+                style="@style/basicSpaces"
+                android:layout_toEndOf="@id/orderCard_image"
+                android:layout_below="@+id/orderCard_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity 2 "
+                android:textColor="@color/TextPrimary"
+                />
+            <TextView
+                android:id="@+id/orderCardEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                style="@style/basicSpaces"
+                android:text="Status"
+                android:layout_toEndOf="@id/orderCard_image"
+                android:layout_below="@+id/orderCard_Quantity"
+                />
+            <TextView
+                android:id="@+id/orderCard_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/basicSpaces"
+                android:layout_marginBottom="10sp"
+                android:layout_below="@+id/orderCardEx"
+                android:layout_toEndOf="@id/orderCard_image"
+                android:text="Order has been shipped at 17-05-2018"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

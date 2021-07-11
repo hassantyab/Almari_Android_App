@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Customer_Order.MyOrdersListClass">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myOrderActivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/toolbarStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/myOrder_backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_back_button"
+        />
+        <TextView
+            android:text="My Orders"
+            android:layout_marginStart="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/HeadingSize"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/myorders_progressBar"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        style="@style/SpinKitView.Small.Wave"
+        app:SpinKit_Color="@color/colorPrimary"
+        />
+
+
+
+   <LinearLayout
+       android:id="@+id/myorders_layout"
+       android:layout_below="@+id/myOrderActivity_toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:visibility="gone"
+       >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MY ORDERS HISTORY"
+        android:layout_margin="20sp"
+        android:textColor="@color/TextPrimary"
+        android:textStyle="bold"
+
+        />
+    <ListView
+        android:id="@+id/myOrder_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+    </ListView>
+   </LinearLayout>
+   <include
+       android:id="@+id/no_order_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/myOrderActivity_toolbar"
+       layout="@layout/no_orders_layout"
+       android:visibility="gone"
+       />
+</RelativeLayout>

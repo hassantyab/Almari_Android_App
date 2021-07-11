@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashScreen"
+    android:background="@color/white"
+    >
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/splash_pb"
+        android:layout_below="@id/splash_img"
+        style="@style/SpinKitView.Wave"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:SpinKit_Color="@color/colorPrimary"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/splash_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:src="@drawable/almari"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/splash_retry"
+        android:layout_below="@+id/splash_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:visibility="gone"
+        style="@style/buttonColor"
+        />
+</RelativeLayout>

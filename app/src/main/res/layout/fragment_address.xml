@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order_Activities.AddressFragment"
+    >
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/address_progressBar"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        style="@style/SpinKitView.Large.Wave"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:SpinKit_Color="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        />
+
+    <RelativeLayout
+        android:id="@+id/address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"
+        >
+<TextView
+    android:id="@+id/AddressHeading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SHIPPING/BILLING ADDRESS"
+    android:textAlignment="center"
+    android:layout_margin="20sp"
+    android:textColor="@color/TextPrimary"
+    />
+        <View
+            android:layout_below="@id/AddressHeading"
+            android:id="@+id/viewlineAddress"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/AppBackground" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CardDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewlineAddress"
+        android:padding="40sp"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TopSpaces"
+                android:text="" />
+            <CheckBox
+                android:id="@+id/user_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TopSpaces"
+                android:layout_alignParentRight="true"
+                android:text="Use current address"
+                android:checked="true"
+                />
+            <TextView
+                android:id="@+id/user_phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/basicSpaces"
+                android:layout_below="@id/user_address"
+                android:text="User phone number" />
+
+            <TextView
+                android:id="@+id/user_AddAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TopSpaces"
+                android:textColor="@color/linkColor"
+                android:layout_marginBottom="10sp"
+                android:textStyle="bold"
+                android:layout_below="@id/user_phoneNumber"
+                android:text="ADD NEW ADDRESS" />
+
+            <EditText
+                android:id="@+id/user_newAddress"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                style="@style/basicSpaces"
+                android:layout_marginBottom="20sp"
+                android:hint="Right new address here"
+                android:layout_below="@id/user_AddAddress"
+                android:maxLines="2"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fbCardDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewlineAddress"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="Fill following fields in order to proceed"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/TextPrimary"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/address_logo"
+                    />
+
+                <EditText
+                    android:id="@+id/ad_address"
+                    android:layout_margin="10dp"
+                    android:hint="Home address"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone_logo"
+                android:layout_margin="20sp"
+                />
+
+
+            <EditText
+                android:id="@+id/ad_number"
+                android:layout_margin="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="example 923331234533"
+                />
+
+
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/saveDataBTn"
+                android:layout_gravity="center"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                style="@style/buttonColor"
+                android:textColor="@color/white"
+                android:layout_margin="10sp"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+      <Button
+          android:layout_alignParentBottom="true"
+          android:id="@+id/Address_tab_nextBtn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          style="@style/buttonColor"
+          android:text="Next"
+          android:textColor="@color/white"
+          />
+
+
+    </RelativeLayout>
+</RelativeLayout>

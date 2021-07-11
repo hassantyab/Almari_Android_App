@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140sp"
+    android:id="@+id/linearLayoutCategory"
+    android:background="@color/white"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10sp"
+            >
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rlayout"
+                >
+
+                <ImageView
+                    android:id="@+id/Category_p_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:padding="1sp"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/Category_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible">
+
+                </ProgressBar>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Category_p_Brand"
+                android:layout_toEndOf="@+id/rlayout"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:ellipsize="end"
+                android:text="Brand"
+                android:textColor="@android:color/darker_gray"
+                style="@style/TopSpaces"
+                />
+
+            <TextView
+                android:id="@+id/Category_p_title"
+                android:layout_toEndOf="@+id/rlayout"
+                android:layout_below="@+id/Category_p_Brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:maxLines="2"
+                android:textColor="@android:color/black"
+                style="@style/basicSpaces"
+                />
+
+            <TextView
+                android:id="@+id/Category_P_price"
+                android:layout_below="@id/Category_p_title"
+                android:layout_toEndOf="@+id/rlayout"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:maxLength="10"
+                android:textColor="@android:color/darker_gray"
+                style="@style/basicSpaces"
+                />
+            <RatingBar
+                android:id="@+id/Category_ratingBar"
+                android:layout_toEndOf="@id/rlayout"
+                android:layout_below="@+id/Category_P_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RatingBar"
+                android:numStars="5"
+                android:max="5"
+                android:rating="2.5"
+                android:stepSize="0.5"
+                android:layout_marginStart="10sp"
+                />
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

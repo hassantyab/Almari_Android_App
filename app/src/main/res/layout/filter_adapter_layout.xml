@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_margin="10sp"
+        android:paddingStart="20sp"
+        />
+    <TextView
+        android:id="@+id/tag_moreBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:text="Any"
+        android:textAlignment="textEnd"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_margin="10sp"
+        android:paddingEnd="10sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+</LinearLayout>

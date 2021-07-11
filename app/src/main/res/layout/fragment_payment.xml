@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Order_Activities.paymentFragment">
+
+    <RelativeLayout
+        android:id="@+id/payment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50sp"
+        >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+  <RadioGroup
+      android:layout_margin="10sp"
+      android:padding="10sp"
+      android:id="@+id/payment_RadioGroup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <RadioButton
+          android:id="@+id/payment_COD"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Cash On Delivery"
+          android:checked="true"
+          />
+  </RadioGroup>
+
+        <TextView
+            android:text="Or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/payment_paypalBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pay with Paypal"
+            android:textColor="@color/white"
+            android:background="#3f89ff"
+            android:layout_margin="10sp"
+            />
+
+
+</LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#c4c4c4"
+
+        >
+        <TextView
+            android:id="@+id/payments_totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:2344"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+
+            />
+        <Button
+            android:id="@+id/paymentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/buttonColor"
+            android:text="Confirm"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+    </RelativeLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/payment_progressBar"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_centerInParent="true"
+        style="@style/SpinKitView.Small.Wave"
+        app:SpinKit_Color="@color/colorPrimary"
+        android:visibility="visible"
+        />
+</RelativeLayout>

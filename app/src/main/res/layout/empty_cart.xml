@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/empty_cart_layout"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="You have no items in the cart"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/TextPrimary"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/empty_cart_logo"
+        android:layout_margin="10sp"
+        />
+    <Button
+        android:id="@+id/empty_cart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="Continue Shopping"
+        android:textColor="@color/white"
+        style="@style/buttonColor"
+        />
+
+</LinearLayout>
